@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email OTP Verification</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<button onclick="openModal()">Open Registration Form</button>
+
+<div class="modal-overlay" id="modal" style="display: none;">
+    <div class="modal">
+        <h2>Register & Verify OTP</h2>
+        <input id="firstName" placeholder="First Name" required>
+        <input id="surname" placeholder="Surname" required>
+        <input id="email" placeholder="Email" required>
+        <input id="mobile" placeholder="+91XXXXXXXXXX" required>
+        <button onclick="registerUser()">Register</button>
+        <button onclick="sendOtp()">Send OTP</button>
+
+        <div id="otpSection" style="display: none;">
+            <input id="otp" placeholder="Enter OTP" required>
+            <button onclick="verifyOtp()">Verify OTP</button>
+        </div>
+
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
